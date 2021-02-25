@@ -1,3 +1,3 @@
 # rental-tailwind
 
-demo coba-rental.netlify.app
+demo https://coba-rental.netlify.app/
