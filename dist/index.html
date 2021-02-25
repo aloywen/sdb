@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyscars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
+</head>
+
+<body id="atas">
+    <div class="container flex flex-col justify-center w-full">
+
+        <nav id="nav"
+            class="flex justify-around bg-blue-400 h-16 items-center sm:bg-transparent w-full fixed top-0 z-10">
+            <div class="logo flex">
+                <p class="dark:text-gray-100">LC</p>
+                <div class="h-4 w-4 bg-yellow-300 ml-1 mt-5"></div>
+            </div>
+
+            <ul class="flex justify-between">
+                <li><a href="#about" class="md:text-lg lg:text-2xl dark:text-gray-100">Tentang Kami</a></li>
+                <li><a href="#harga" class="md:text-lg lg:text-2xl dark:text-gray-100">List Harga</a></li>
+                <li><a href="#feedback" class="md:text-lg lg:text-2xl dark:text-gray-100">Testimoni</a></li>
+                <li><a href="#kontak" class="md:text-lg lg:text-2xl dark:text-gray-100">Kontak</a></li>
+            </ul>
+
+            <div class="menu-toggle flex flex-col justify-between h-7 relative sm:hidden md:hidden lg:hidden">
+                <input class="absolute h-11 w-11 opacity-0 z-10" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="tombol h-8 w-8 rounded-full bg-gray-800 dark:bg-gray-100"></div>
+        </nav>
+
+        <a href="#atas"><button
+                class="w-20 h-20 rounded-full bg-green-400 fixed bottom-5 right-5 z-10 text-xl text-gray-100 outline-none">^</button></a>
+
+        <!-- hero -->
+        <div
+            class="dark:bg-gray-800 hero flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center pt-10">
+            <div class="w-1/2 flex flex-col justify-center items-center">
+                <p class="p text-8xl">Loyscars</p>
+                <p class="text-xl md:text-2xl lg:text-2xl text-gray-700 font-bold">Murah, Mudah, Cepat</p>
+            </div>
+            <div class="w-1/2"><img src="../assets/z.png" alt="" class="w-50 h-50 m"></div>
+        </div>
+
+        <!-- about -->
+        <div id="about" class="dark:bg-gray-800 about text-center py-32">
+            <h2 class="text-3xl lowercase text-gray-500 dark:text-gray-100 mb-10">kenapa harus di loyscars?</h2>
+            <div class="flex flex-col md:flex-row lg:flex-row items-center">
+                <div class="w-1/2 mb-10"><img src="../assets/y.png" alt=""></div>
+                <div class="w-1/2 flex flex-col justify-center items-center">
+                    <div
+                        class="w-80 h-20 bg-gray-200 shadow-lg rounded-md mb-5 flex items-center hover:bg-blue-400 transition duration-300 text-hover">
+                        <img src="../assets/a1.png" alt="" class="w-20 h-16 mr-5 ml-8">
+                        <p class="font-semibold text-gray-700">Harga Sewa Terjangkau</p>
+                    </div>
+                    <div
+                        class="w-80 h-20 bg-gray-200 shadow-lg rounded-md mb-5 flex items-center hover:bg-blue-400 transition duration-300 text-hover">
+                        <img src="../assets/a2.png" alt="" class="w-20 h-16 mr-5 ml-8">
+                        <p class="font-semibold text-gray-700">Respon Cepat</p>
+                    </div>
+                    <div
+                        class="w-80 h-20 bg-gray-200 shadow-lg rounded-md flex items-center hover:bg-blue-400 transition duration-300 hover:text-white text-hover">
+                        <img src="../assets/a3.png" alt="" class="w-20 h-16 mr-5 ml-8">
+                        <p class="font-semibold text-gray-700">Syarat Mudah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- list harga -->
+        <div id="harga" class="dark:bg-gray-800 harga py-10 text-center">
+            <h2 class="text-3xl font-bold text-gray-500 dark:text-gray-100 py-10">List Harga</h2>
+            <div class="flex flex-col md-flex-row lg:flex-row lg:justify-around mt-10 items-center">
+                <div
+                    class="flex flex-col justify-center align-center w-80 h-72 rounded-md bg-gray-200 shadow-md hover:bg-gray-500 transition duration-500 mb-8 text-hover">
+                    <img src="../assets/mb1.png" alt="">
+                    <p class="font-semibold text-gray-700">Avanza</p>
+                    <p class="font-semibold text-gray-700">Rp . 200.000 / hari</p>
+                    <button
+                        class="mx-auto w-64 h-14 py-2 px-2 bg-blue-300 hover:bg-blue-500 transition duration-300 text-white rounded-md">PESAN</button>
+                </div>
+                <div
+                    class="flex flex-col justify-center align-center w-80 h-72 rounded-md bg-gray-200 shadow-md hover:bg-gray-500 transition duration-500 mb-8 text-hover">
+                    <img src="../assets/mb2.png" alt="" class="w-64 mx-auto">
+                    <p class="font-semibold text-gray-700">Grand Max</p>
+                    <p class="font-semibold text-gray-700">Rp . 200.000 / hari</p>
+                    <button
+                        class="mx-auto w-64 h-14 py-2 px-2 bg-blue-300 hover:bg-blue-500 transition duration-300 text-white rounded-md">PESAN</button>
+                </div>
+                <div
+                    class="flex flex-col justify-center align-center w-80 h-72 rounded-md bg-gray-200 shadow-md hover:bg-gray-500 transition duration-500 mb-8 text-hover">
+                    <img src="../assets/mb3.png" alt="" class="w-64 mx-auto">
+                    <p class="font-semibold text-gray-700">XPander</p>
+                    <p class="font-semibold text-gray-700">Rp . 300.000 / hari</p>
+                    <button
+                        class=" w-64 h-14 py-2 px-2 mx-auto bg-blue-300 hover:bg-blue-500 transition duration-300 text-white rounded-md">PESAN</button>
+                </div>
+
+            </div>
+            <button
+                class="bg-yellow-300 hover:bg-yellow-500 py-3 px-24 md:px-32 lg:px-32 mt-5 rounded-md shadow-md text-gray-800 font-bold text-lg">Lihat
+                Lainnya</button>
+        </div>
+
+        <!-- feedback -->
+        <div id="feedback" class="pt-10 pb-32 bg-yellow-300">
+            <h2 class="text-lg font-bold lg:text-3xl text-gray-700 text-center py-10">Apa kata mereka yang
+                pernah
+                sewa di
+                loyscars?</h2>
+
+            <div class="kotak glide">
+                <div class="glide__track mx-auto" data-glide-el="track">
+
+                    <ul class="glide__slides ml-20 sm:ml-40 md:ml-5 lg:ml-10">
+
+                        <li class="glide__slide">
+                            <div class="w-85 h-60 rounded-md bg-gray-800 shadow-md relative overflow-hidden">
+                                <img src="../assets/quote.png" alt="" class="mt-3 ml-3">
+                                <p class="font-bold text-gray-200 text-center mt-1">Lorem ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit.
+                                    Quis
+                                    nemo
+                                    in
+                                    perspiciatis consectetur
+                                    repellat tempore?</p>
+                                <div class="flex bg-green-400 bottom-0 absolute w-full items-center py-1">
+                                    <img src="../assets/7.png" alt="" class="ml-7">
+                                    <p class="ml-3 text-lg font-semibold">paul robinson</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="w-85 h-60 rounded-md bg-gray-800 shadow-md relative overflow-hidden">
+                                <img src="../assets/quote.png" alt="" class="mt-3 ml-3">
+                                <p class="font-bold text-gray-200 text-center mt-1">Mantap jiwaa men</p>
+                                <div class="flex bg-green-400 bottom-0 absolute w-full items-center py-1">
+                                    <img src="../assets/7.png" alt="" class="ml-7">
+                                    <p class="ml-3 text-lg font-semibold">paul robinson</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="w-85 h-60 rounded-md bg-gray-800 shadow-md relative overflow-hidden">
+                                <img src="../assets/quote.png" alt="" class="mt-3 ml-3">
+                                <p class="font-bold text-gray-200 text-center mt-1">tes testimonial</p>
+                                <div class="flex bg-green-400 bottom-0 absolute w-full items-center py-1">
+                                    <img src="../assets/2.png" alt="" class="ml-7">
+                                    <p class="ml-3 text-lg font-semibold">febrina</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="w-85 h-60 rounded-md bg-gray-800 shadow-md relative overflow-hidden">
+                                <img src="../assets/quote.png" alt="" class="mt-3 ml-3">
+                                <p class="font-bold text-gray-200 text-center mt-1">
+                                    adipisicing
+                                    elit.
+                                    in
+                                    perspiciatis consectetur
+                                    repellat tempore?</p>
+                                <div class="flex bg-green-400 bottom-0 absolute w-full items-center py-1">
+                                    <img src="../assets/7.png" alt="" class="ml-7">
+                                    <p class="ml-3 text-lg font-semibold">paul robinson</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="w-85 h-60 rounded-md bg-gray-800 shadow-md relative overflow-hidden">
+                                <img src="../assets/quote.png" alt="" class="mt-3 ml-3">
+                                <p class="font-bold text-gray-200 text-center mt-1">
+                                    Quis
+                                    nemo
+                                    in
+                                    perspiciatis consectetur
+                                    repellat tempore?</p>
+                                <div class="flex bg-green-400 bottom-0 absolute w-full items-center py-1">
+                                    <img src="../assets/2.png" alt="" class="ml-7">
+                                    <p class="ml-3 text-lg font-semibold">febrina</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="glide__arrows mt-5" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="../assets/prev.png"
+                            alt=""></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="../assets/next.png"
+                            alt=""></button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <div id="kontak" class="bg-gray-800 flex flex-col lg:flex-row py-14">
+            <div class="footer w-1/2 w-full px-10">
+                <h2 class="text-gray-100 text-3xl mb-10">Showroom</h2>
+                <p class="text-gray-100">Jl . doang jadian engga no.1</p>
+                <p class="text-gray-100">Kota Wakanda</p>
+                <a href="" class="sosmed">
+                    <div class="flex items-center mt-10">
+                        <img src="../assets/wa.png" alt="" class="fill-current text-green-600">
+                        <p class="text-gray-100 ml-5">081101010101</p>
+                    </div>
+                </a>
+                <a href="" class="sosmed">
+                    <div class="flex items-center">
+                        <img src="../assets/ig.png" alt="">
+                        <p class="text-gray-100 ml-5">loyscars</p>
+                    </div>
+                </a>
+                <a href="" class="sosmed">
+                    <div class="flex items-center">
+                        <img src="../assets/fb.png" alt="">
+                        <p class="text-gray-100 ml-5">loyscars</p>
+                    </div>
+                </a>
+            </div>
+            <div class="footer w-1/2 px-10 w-full">
+                <h2 class="text-gray-100 text-3xl mb-10 mt-10 lg:-mt-1">Tentang Kami</h2>
+                <p class="text-gray-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque quia
+                    amet debitis facilis
+                    sapiente, autem, nobis cum temporibus, nostrum quis iure!</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="glide.min.js"></script>
+
+    <script>
+        //darkmode
+        const tombol = document.querySelector('.tombol');
+        const body = document.querySelector('#atas');
+
+        tombol.addEventListener('click', function () {
+            body.classList.toggle('dark');
+        });
+
+        //navbar scroll
+        window.addEventListener("scroll", function () {
+            let nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        // window.addEventListener("scroll", function () {
+        //     let hero = document.querySelector(".hero");
+        //     hero.classList.toggle("active", window.scrollY > -1);
+        // })
+
+        // window.addEventListener("scroll", function () {
+        //     let about = document.querySelector("#about");
+        //     about.classList.toggle("active", window.scrollY > 1);
+        // })
+
+
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        });
+
+        new Glide(".kotak", {
+            type: 'carousel',
+            perView: 3,
+            breakpoints: {
+                1200: {
+                    perView: 3
+                },
+                900: {
+                    perView: 2
+                },
+                700: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    </script>
+</body>
+
+</html>
