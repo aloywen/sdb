@@ -4,7 +4,7 @@ html {
 }
 body {
     background: #FBFBFB;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     transition: all 0.5s;
 }
 nav.sticky {
@@ -26,7 +26,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
 }
 .hero {
-    background-image: url('../assets/bgb.png');
+    background-image: url('assets/bgb.png');
     background-position-x: 90px;
   }
 .active {
@@ -68,7 +68,7 @@ nav ul.slide {
 }
 
 .about {
-    background-image: url('../assets/ab.png');
+    background-image: url('assets/ab.png');
     background-size: cover;
 }
 .w-85 {
