@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../assets/datatable/style.css">
+    <link rel="stylesheet" href="../assets/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <li class="sidebar-item active">
+                            <a href="pending.html" class='sidebar-link'>
+                                <span>Pending</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="history.html" class='sidebar-link'>
+                                <span>History</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="rooms.html" class='sidebar-link'>
+                                <span>Rooms</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="regist.html" class='sidebar-link'>
+                                <span>Regist</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="../index.html" class='sidebar-link'>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+
+
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last">
+                            <h3>Request Pending</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <section class="section">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-striped" id="table1">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Penyewa</th>
+                                        <th>Kuantitas</th>
+                                        <th>Ukuran</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Jennifer</td>
+                                        <td>1 box</td>
+                                        <td>Besar</td>
+                                        <td>
+                                            <a href="detail-pending.html">
+                                                <span class="badge bg-success">Detail</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Steven</td>
+                                        <td>3 box</td>
+                                        <td>Kecil</td>
+                                        <td>
+                                            <a href="detail-pending.html">
+                                                <span class="badge bg-success">Detail</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sudarmono</td>
+                                        <td>2 box</td>
+                                        <td>Sedang</td>
+                                        <td>
+                                            <a href="detail-pending.html">
+                                                <span class="badge bg-success">Detail</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="../assets/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/datatable/simple-datatables.js"></script>
+    <script>
+        // Simple Datatable
+        let table1 = document.querySelector('#table1');
+        let dataTable = new simpleDatatables.DataTable(table1);
+    </script>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
